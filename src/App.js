@@ -126,17 +126,15 @@ function App() {
             <Route
               path="/dashboard"
               element={
-                <ProtectedRoute>
+                // <ProtectedRoute>
                   <Dashboard />
-                </ProtectedRoute>
+                // </ProtectedRoute>
               }
             />
             <Route
               path="/deposit"
               element={
-                <ProtectedRoute>
                   <Deposit />
-                </ProtectedRoute>
               }
             />
             {/* <Route
@@ -174,41 +172,35 @@ function App() {
             <Route
               path="/account-setting"
               element={
-                <ProtectedRoute>
+                //<ProtectedRoute>
                   <Account_Setting />
-                </ProtectedRoute>
+                //</ProtectedRoute>
               }
             />
             <Route
               path="/add-task"
               element={
-                <ProtectedRoute>
                   <Add_task />
-                </ProtectedRoute>
               }
             />
             <Route
               path="/task-list"
               element={
-                <ProtectedRoute>
+                // <ProtectedRoute>
                   <Task_list />
-                </ProtectedRoute>
+                // </ProtectedRoute>
               }
             />
             <Route
               path="/logs"
               element={
-                <ProtectedRoute>
                   <Logs />
-                </ProtectedRoute>
               }
             />
             <Route
               path="/payment"
               element={
-                <ProtectedRoute>
                   <Payment />
-                </ProtectedRoute>
               }
             />
           </Route>
