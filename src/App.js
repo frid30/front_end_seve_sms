@@ -33,6 +33,8 @@ import Add_Edit_Country from "./Admin/Add-Edit-Country";
 
 // Pages
 import Home from "./Pages/Home";
+import Design1 from "./Pages/Design1";
+import Design2 from "./Pages/Design2";
 
 function App() {
   const [newRerender, setNewrerender] = useState(false);
@@ -49,6 +51,10 @@ function App() {
               // </PublicRoute>
             }
           />
+
+          <Route path="/desgin1" element={<Design1 />} />
+
+          <Route path="/desgin2" element={<Design2 />} />
 
           <Route
             path="/login"
@@ -126,15 +132,17 @@ function App() {
             <Route
               path="/dashboard"
               element={
-                // <ProtectedRoute>
+                <ProtectedRoute>
                   <Dashboard />
-                // </ProtectedRoute>
+                </ProtectedRoute>
               }
             />
             <Route
               path="/deposit"
               element={
+                <ProtectedRoute>
                   <Deposit />
+                </ProtectedRoute>
               }
             />
             {/* <Route
@@ -172,35 +180,41 @@ function App() {
             <Route
               path="/account-setting"
               element={
-                //<ProtectedRoute>
+                <ProtectedRoute>
                   <Account_Setting />
-                //</ProtectedRoute>
+                </ProtectedRoute>
               }
             />
             <Route
               path="/add-task"
               element={
+                <ProtectedRoute>
                   <Add_task />
+                </ProtectedRoute>
               }
             />
             <Route
               path="/task-list"
               element={
-                // <ProtectedRoute>
+                <ProtectedRoute>
                   <Task_list />
-                // </ProtectedRoute>
+                </ProtectedRoute>
               }
             />
             <Route
               path="/logs"
               element={
+                <ProtectedRoute>
                   <Logs />
+                </ProtectedRoute>
               }
             />
             <Route
               path="/payment"
               element={
+                <ProtectedRoute>
                   <Payment />
+                </ProtectedRoute>
               }
             />
           </Route>

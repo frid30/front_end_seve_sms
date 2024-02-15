@@ -16,9 +16,9 @@ const Deposit = (props) => {
   const { setIsLoggedIn, isLoggedIn, loader, setLoader } = props;
 
   const { userData } = useSelector((state) => state.authReducer);
-  // if (!userData?.email) {
-  //   navigate("/");
-  // }
+  if (!userData?.email) {
+    navigate("/");
+  }
 
   const [pageLoader, setPageLoader] = useState(false);
 
